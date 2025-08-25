@@ -58,6 +58,7 @@ Click: Login.
 In the Password field, type anything (example: 123).
 
 Output: Bypass Authentication
+
 A04: A04 – Insecure Design (Business Logic Flaw)
 
 Login to Juice Shop.
@@ -92,11 +93,20 @@ Place order.
 
 🛡️ A05: Security Misconfiguration
 
-In URL bar: Type /ftp or /administration.
+Sa browser, i-type:
 
-Output: Access to sensitive page.
+http://127.0.0.1:3000/encryptionkeys
 
-Scoreboard: “Security Misconfiguration” → ✅ Green.
+
+Lalabas yung hardcoded application secrets (crypto keys).
+
+✅ Mag-green sa Scoreboard → Security Misconfiguration.
+
+🔹 Option 4: Accessing /metrics page
+
+Sa browser, i-type:
+
+http://127.0.0.1:3000/metrics
 
 🛡️ A06: Vulnerable & Outdated Components
 
